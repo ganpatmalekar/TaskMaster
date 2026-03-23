@@ -13,7 +13,10 @@ deletion of todo items, providing a seamless user experience with optimized sear
 
 | Main Screen                                                                                                                                 | Add Task                                                                                                                           | Update Task                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| <img alt="Main Screen" height="500" src="C:\Users\ganpat.m\Downloads\WhatsApp%20Image%202026-03-23%20at%2011.11.38%20AM.jpeg" width="250"/> | <img alt="Add Task" height="500" src="C:\Users\ganpat.m\Downloads\WhatsApp Image 2026-03-23 at 11.11.37 AM (1).jpeg" width="250"/> | <img alt="Search" height="500" src="C:\Users\ganpat.m\Downloads\WhatsApp Image 2026-03-23 at 11.11.37 AM.jpeg" width="250"/> |
+| ![WhatsApp Image 2026-03-23 at 11 11 38 AM](https://github.com/user-attachments/assets/56641a9f-15e7-42ec-adee-300b2d0e504b)
+ | ![WhatsApp Image 2026-03-23 at 11 11 37 AM (1)](https://github.com/user-attachments/assets/3bc77fe4-1c44-43af-9577-10755b5bbf67)
+ | ![WhatsApp Image 2026-03-23 at 11 11 37 AM](https://github.com/user-attachments/assets/2f2bdbcb-70f2-401f-b5f7-6d2a886d280b)
+ |
 
 ## 🚀 Features
 
