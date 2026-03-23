@@ -6,9 +6,9 @@ A robust and modern Android Todo application built to demonstrate clean architec
 TaskMaster is designed to help users efficiently manage their daily tasks with a smooth and responsive interface. It leverages a REST API to simulate real-world data fetching, updating, and deletion of todo items, providing a seamless user experience with optimized searching and filtering.
 
 ## 📸 Screenshots
-| Main Screen                                                                                   | Add Task                                                                                       | Update Task                                                                                     |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| <img alt="Main Screen" height="450" src="C:\Users\ganpat.m\Downloads\main.jpeg" width="200"/> | <img alt="Add Task" height="450" src="C:\Users\ganpat.m\Downloads\add_task.jpeg" width="200"/> | <img alt="Search" height="450" src="C:\Users\ganpat.m\Downloads\update_task.jpeg" width="200"/> |
+| Main Screen                                                                     | Add Task                                                                         | Update Task                                                                            |
+|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| <img src="./screenshots/main.jpeg" width="200" height="450" alt="Main Screen"/> | <img src="./screenshots/add_task.jpeg" width="200" height="450" alt="Add Task"/> | <img src="./screenshots/update_task.jpeg" width="200" height="450" alt="Update Task"/> |
 
 ## 🚀 Features
 - **View Tasks:** Fetches and displays a list of todo items from a remote API.
