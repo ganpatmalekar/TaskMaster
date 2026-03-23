@@ -12,6 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/ivClose"
@@ -32,24 +33,41 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etNewTask"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:padding="12dp"
+        android:textColor="@color/text_high_contrast"
+        android:textColorHint="@color/text_hint_high_contrast"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintWidth_max="488dp"
         tools:hint="Enter your new/updated task" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cbCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_as_completed"
+        android:textColor="@color/text_high_contrast"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/etNewTask"
+        app:layout_constraintTop_toBottomOf="@+id/etNewTask"
+        tools:visibility="visible" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnAddUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_dialog"
+        android:backgroundTint="@color/primary_button_background"
         android:padding="16dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNewTask"
+        app:layout_constraintTop_toBottomOf="@+id/cbCompleted"
         tools:text="Add/Update" />
 </androidx.constraintlayout.widget.ConstraintLayout>

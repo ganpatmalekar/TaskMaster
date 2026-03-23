@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import androidx.fragment.app.DialogFragment
 import com.gsm.taskmaster.R
 import com.gsm.taskmaster.data.model.TodoItem
@@ -54,25 +55,22 @@ class AddUpdateTodoDialogFragment : DialogFragment() {
         val position = arguments?.getInt(AppConstants.ADAPTER_POSITION)
 
         binding.apply {
-            tvTitle.text = if (action == AppConstants.ACTION_ADD)
-                getString(R.string.add_task)
-            else
-                getString(R.string.update_task)
-
-            if (action == AppConstants.ACTION_UPDATE) {
-                etNewTask.setText(todoItem?.title ?: "")
-            } else {
+            if (action == AppConstants.ACTION_ADD) {
+                tvTitle.text = getString(R.string.add_task)
                 etNewTask.hint = getString(R.string.add_new_task)
+                btnAddUpdate.text = getString(R.string.add)
+                cbCompleted.visibility = View.GONE
+            } else {
+                tvTitle.text = getString(R.string.update_task)
+                etNewTask.setText(todoItem?.title ?: "")
+                btnAddUpdate.text = getString(R.string.update)
+                cbCompleted.visibility = View.VISIBLE
+                cbCompleted.isChecked = todoItem?.completed ?: false
             }
 
             ivClose.setOnClickListener {
                 dismiss()
             }
-
-            btnAddUpdate.text = if (action == AppConstants.ACTION_ADD)
-                getString(R.string.add)
-            else
-                getString(R.string.update)
 
             btnAddUpdate.setOnClickListener {
                 // Handle add/update logic
@@ -86,7 +84,7 @@ class AddUpdateTodoDialogFragment : DialogFragment() {
                     itemClickListener.invoke(action, 0, todoItem)
                 } else {
                     val todoItem = TodoItem(
-                        completed = false,
+                        completed = cbCompleted.isChecked,
                         id = todoItem?.id ?: 0,
                         title = etNewTask.text.toString(),
                         userId = todoItem?.userId ?: 0
